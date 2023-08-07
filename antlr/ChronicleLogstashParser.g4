@@ -9,30 +9,38 @@ filterblock: ID LBRACE (plugin|conditionalblock)* RBRACE EOF;
 conditionalblock:
         (IF|ELSEIF) statement LBRACE (plugin|conditionalblock)* RBRACE
     |   ELSE LBRACE (plugin|conditionalblock)* RBRACE
-    |   FOR (ID COMMA)? ID IN ID LBRACE (plugin|conditionalblock)* RBRACE
+    |   FOR (FORID FORCOMMA)? FORID FORIN FORID FOROPENER (plugin|conditionalblock)* RBRACE
+    // |   FOR ((ID|UNDERSCORE) COMMA)? ID IN (ID (DOT ID)*) LBRACE (plugin|conditionalblock)* RBRACE
     ;
 
 // Conditional statement rule definitions
 statement:
 		LPAREN statement RPAREN
+	|	LBRACKET statement RBRACKET
 	|	statement boolean_op statement
-	|	NOT statement
+	|	BOOLNOT statement
 	|	expression
 	;
 
-expression: 
+expression:
 		binary_expression
 	|	unary_expression
+	|	is_in_expression
 	;
 
 unary_expression:
-		if_statement_id
+		IFSTATEMENTID
 	|	BOOLEAN
+	;
+
+is_in_expression:
+		IFSTATEMENTID NOT? IN list
+	|	IFSTATEMENTID NOT? IN LPAREN list RPAREN
 	;
 
 binary_expression: expression_val boolean_eval expression_val;
 
-expression_val: if_statement_id|math_statement|number|list|STRING|REGEX|BOOLEAN;
+expression_val: math_statement|number|list|IFSTATEMENTID|STRING|REGEX|BOOLEAN|ID;
 
 math_statement: 
 		LPAREN math_statement RPAREN
@@ -40,9 +48,9 @@ math_statement:
 	|	math_expression
 	;
 
-math_expression: (if_statement_id|number) MATHOP (if_statement_id|number);
+math_expression: (IFSTATEMENTID|number) MATHOP (IFSTATEMENTID|number);
 
-if_statement_id: (LBRACKET (ID|INTEGER)+ RBRACKET)+;
+// if_statement_id: (LBRACKET (ID|INTEGER|UNDERSCORE)+ RBRACKET)+;
 
 boolean_op:
 		AND
@@ -58,10 +66,9 @@ boolean_eval:
 	|	GTEQUAL
 	|	REMATCH
 	|	RENOTMATCH
-	|	IN
 	;
 
-plugin: ID LBRACE keyvalue* RBRACE;
+plugin: PLUGINKEYWORD LBRACE keyvalue* RBRACE;
 
 keyvalue: kv_lvalue KVSEPARATOR kv_rvalue COMMA?;
 
@@ -71,8 +78,6 @@ kv_rvalue: (number|list|hash|STRING|BOOLEAN|ID);
 
 hash: LBRACE (keyvalue)* RBRACE;
 
-list: LBRACKET listval (COMMA? listval)* RBRACKET;
-
-listval: STRING;
+list: LBRACKET (STRING | number | COMMA)* RBRACKET;
 
 number: INTEGER | FLOAT;
