@@ -40,9 +40,9 @@ is_in_expression:
 
 binary_expression: expression_val boolean_eval expression_val;
 
-expression_val: math_statement|number|list|IFSTATEMENTID|STRING|REGEX|BOOLEAN|ID;
+expression_val: math_statement|number|if_list|IFSTATEMENTID|STRING|REGEX|BOOLEAN|ID;
 
-math_statement: 
+math_statement:
 		LPAREN math_statement RPAREN
 	|	math_statement MATHOP math_statement
 	|	math_expression
@@ -68,7 +68,7 @@ boolean_eval:
 	|	RENOTMATCH
 	;
 
-plugin: PLUGINKEYWORD LBRACE keyvalue* RBRACE;
+plugin: ID LBRACE keyvalue* RBRACE;
 
 keyvalue: kv_lvalue KVSEPARATOR kv_rvalue COMMA?;
 
@@ -78,6 +78,10 @@ kv_rvalue: (number|list|hash|STRING|BOOLEAN|ID);
 
 hash: LBRACE (keyvalue)* RBRACE;
 
-list: LBRACKET (STRING | number | COMMA)* RBRACKET;
+list: LBRACKET (list_value (list_value)*)? RBRACKET;
+
+if_list: LBRACKET ((STRING | BOOLEAN | number) (list_value)*)? RBRACKET; // lists in if statements cannot start with an ID to avoid ambiguity with if statement IDs
+
+list_value: STRING | ID | BOOLEAN | number | COMMA;
 
 number: INTEGER | FLOAT;

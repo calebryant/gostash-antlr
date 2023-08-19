@@ -14,19 +14,6 @@ IN: 'in';
 NOT: 'not';
 fragment TRUE: 'true';
 fragment FALSE: 'false';
-PLUGINKEYWORD:
-        'mutate'    
-    |   'grok'    
-    |   'json'    
-    |   'xml'    
-    |   'csv'    
-    |   'kv'    
-    |   'base64'    
-    |   'date'    
-    |   'drop'    
-    |   'statedump'    
-    -> pushMode(PLUGINMODE)
-    ;
 
 // Literal token definitions
 LBRACE: '{';
@@ -35,7 +22,7 @@ LBRACKET: '[';
 RBRACKET: ']';
 LPAREN: '(';
 RPAREN: ')';
-KVSEPARATOR: '=>' | '=' | ':';
+KVSEPARATOR: ( '=>' | '=' | ':' );
 COMMA: ',';
 UNDERSCORE: '_';
 DOT: '.';
@@ -68,25 +55,8 @@ fragment LETTERS: [a-zA-Z];
 
 // Mode for for statements
 mode FORMODE;
-FORWS: [ \t\n\r]+ -> skip ; // whitespace
-FORCOMMA: ',' ;
-FORIN: 'in' ;
-FORID: ~[ ,{\t\n\r]+ ;
+FORWS: WS -> skip ; // whitespace
+FORCOMMA: COMMA ;
+FORIN: IN ;
+FORID: ~[ ,{}\t\n\r]+ ;
 FOROPENER: '{' -> popMode ;
-
-mode PLUGINMODE;
-
-// mode IFMODE;
-// IFWS: [ \t\n\r]+ -> skip ; // whitespace
-// IFSTATEMENTID: (LBRACKET (LETTERS|DIGIT+|[_\-@])+ RBRACKET)+;
-// MATHOP: [+\-*/];
-// EQUAL: '==';
-// NOTEQUAL: '!=';
-// LESSTHAN: '<';
-// GREATERTHAN: '>';
-// LTEQUAL: '<=';
-// GTEQUAL: '>=';
-// REMATCH: '=~';
-// RENOTMATCH: '!~';
-// AND: 'and' | '&&';
-// OR: 'or' | '||';
