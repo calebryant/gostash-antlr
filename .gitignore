@@ -6,3 +6,8 @@
 *.interp
 *.tokens
 *.java
+
+bin/*
+lib/*
+include/*
+pyvenv.cfg
