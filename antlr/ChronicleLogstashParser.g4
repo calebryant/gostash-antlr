@@ -18,6 +18,7 @@ statement:
 	|	LBRACKET statement RBRACKET
 	|	statement boolean_op statement
 	|	BOOLNOT statement
+	|	NOT statement
 	|	expression
 	;
 
@@ -39,7 +40,7 @@ unary_expression:
 
 binary_expression: expression_val boolean_eval expression_val;
 
-expression_val: math_statement|NUMBER|if_list|IFSTATEMENTID|STRING|REGEX|BOOLEAN|ID;
+expression_val: math_statement|NUMBER|if_list|IFSTATEMENTID|STRING|REGEX|BOOLEAN|ID|LPAREN REGEX RPAREN|LPAREN STRING RPAREN;
 
 math_statement:
 		LPAREN math_statement RPAREN
@@ -64,6 +65,7 @@ boolean_eval:
 	|	MATCH
 	|	NOTMATCH
 	|	IN
+	|	NOT IN
 	;
 
 plugin: ID LBRACE keyvalue* RBRACE;
