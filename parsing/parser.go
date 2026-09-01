@@ -94,3 +94,58 @@ func ParseAndPrint(filePath string) error {
 
 	return nil
 }
+
+// ParseToAST parses a file and returns an AST
+func ParseToAST(filePath string) (*AST, error) {
+	filterBlock, err := ParseFile(filePath)
+	if err != nil {
+		return nil, err
+	}
+
+	if filterBlock == nil {
+		return nil, fmt.Errorf("parse tree is nil")
+	}
+
+	// Build AST from parse tree
+	builder := NewASTBuilder("filter")
+	ast := builder.Build(filterBlock)
+
+	return ast, nil
+}
+
+// ParseToJSON parses a file and returns JSON string
+func ParseToJSON(filePath string) (string, error) {
+	ast, err := ParseToAST(filePath)
+	if err != nil {
+		return "", err
+	}
+
+	return ast.ToJSON()
+}
+
+// ParseStringToAST parses a configuration string and returns an AST
+func ParseStringToAST(config string) (*AST, error) {
+	filterBlock, err := ParseString(config)
+	if err != nil {
+		return nil, err
+	}
+
+	if filterBlock == nil {
+		return nil, fmt.Errorf("parse tree is nil")
+	}
+
+	builder := NewASTBuilder("filter")
+	ast := builder.Build(filterBlock)
+
+	return ast, nil
+}
+
+// ParseStringToJSON parses a configuration string and returns JSON
+func ParseStringToJSON(config string) (string, error) {
+	ast, err := ParseStringToAST(config)
+	if err != nil {
+		return "", err
+	}
+
+	return ast.ToJSON()
+}
