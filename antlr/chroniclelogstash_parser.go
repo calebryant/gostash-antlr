@@ -53,7 +53,7 @@ func chroniclelogstashparserParserInit() {
 	}
 	staticData.PredictionContextCache = antlr.NewPredictionContextCache()
 	staticData.serializedATN = []int32{
-		4, 1, 39, 220, 2, 0, 7, 0, 2, 1, 7, 1, 2, 2, 7, 2, 2, 3, 7, 3, 2, 4, 7,
+		4, 1, 39, 239, 2, 0, 7, 0, 2, 1, 7, 1, 2, 2, 7, 2, 2, 3, 7, 3, 2, 4, 7,
 		4, 2, 5, 7, 5, 2, 6, 7, 6, 2, 7, 7, 7, 2, 8, 7, 8, 2, 9, 7, 9, 2, 10, 7,
 		10, 2, 11, 7, 11, 2, 12, 7, 12, 2, 13, 7, 13, 2, 14, 7, 14, 2, 15, 7, 15,
 		2, 16, 7, 16, 2, 17, 7, 17, 2, 18, 7, 18, 1, 0, 1, 0, 1, 0, 1, 0, 5, 0,
@@ -62,95 +62,106 @@ func chroniclelogstashparserParserInit() {
 		1, 1, 1, 1, 5, 1, 67, 8, 1, 10, 1, 12, 1, 70, 9, 1, 1, 1, 1, 1, 1, 1, 1,
 		1, 3, 1, 76, 8, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5, 1, 84, 8, 1,
 		10, 1, 12, 1, 87, 9, 1, 1, 1, 3, 1, 90, 8, 1, 1, 2, 1, 2, 1, 2, 1, 2, 1,
-		2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 3, 2, 104, 8, 2, 1, 2, 1,
-		2, 1, 2, 1, 2, 5, 2, 110, 8, 2, 10, 2, 12, 2, 113, 9, 2, 1, 3, 1, 3, 3,
-		3, 117, 8, 3, 1, 4, 1, 4, 1, 5, 1, 5, 1, 5, 1, 5, 1, 6, 1, 6, 1, 6, 1,
-		6, 1, 6, 1, 6, 1, 6, 1, 6, 3, 6, 133, 8, 6, 1, 7, 1, 7, 1, 7, 1, 7, 1,
-		7, 1, 7, 3, 7, 141, 8, 7, 1, 7, 1, 7, 1, 7, 5, 7, 146, 8, 7, 10, 7, 12,
-		7, 149, 9, 7, 1, 8, 1, 8, 1, 8, 1, 8, 1, 9, 1, 9, 1, 10, 1, 10, 1, 11,
-		1, 11, 1, 11, 5, 11, 162, 8, 11, 10, 11, 12, 11, 165, 9, 11, 1, 11, 1,
-		11, 1, 12, 1, 12, 1, 12, 1, 12, 3, 12, 173, 8, 12, 1, 13, 1, 13, 1, 14,
-		1, 14, 1, 14, 1, 14, 1, 14, 1, 14, 3, 14, 183, 8, 14, 1, 15, 1, 15, 5,
-		15, 187, 8, 15, 10, 15, 12, 15, 190, 9, 15, 1, 15, 1, 15, 1, 16, 1, 16,
-		1, 16, 5, 16, 197, 8, 16, 10, 16, 12, 16, 200, 9, 16, 3, 16, 202, 8, 16,
-		1, 16, 1, 16, 1, 17, 1, 17, 1, 17, 5, 17, 209, 8, 17, 10, 17, 12, 17, 212,
-		9, 17, 3, 17, 214, 8, 17, 1, 17, 1, 17, 1, 18, 1, 18, 1, 18, 0, 2, 4, 14,
-		19, 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34,
-		36, 0, 8, 1, 0, 3, 4, 2, 0, 29, 29, 32, 32, 2, 0, 32, 32, 34, 34, 1, 0,
-		27, 28, 2, 0, 7, 7, 19, 26, 2, 0, 30, 30, 33, 33, 2, 0, 29, 30, 34, 34,
-		3, 0, 16, 16, 29, 30, 33, 34, 237, 0, 38, 1, 0, 0, 0, 2, 89, 1, 0, 0, 0,
-		4, 103, 1, 0, 0, 0, 6, 116, 1, 0, 0, 0, 8, 118, 1, 0, 0, 0, 10, 120, 1,
-		0, 0, 0, 12, 132, 1, 0, 0, 0, 14, 140, 1, 0, 0, 0, 16, 150, 1, 0, 0, 0,
-		18, 154, 1, 0, 0, 0, 20, 156, 1, 0, 0, 0, 22, 158, 1, 0, 0, 0, 24, 168,
-		1, 0, 0, 0, 26, 174, 1, 0, 0, 0, 28, 182, 1, 0, 0, 0, 30, 184, 1, 0, 0,
-		0, 32, 193, 1, 0, 0, 0, 34, 205, 1, 0, 0, 0, 36, 217, 1, 0, 0, 0, 38, 39,
-		5, 33, 0, 0, 39, 44, 5, 9, 0, 0, 40, 43, 3, 22, 11, 0, 41, 43, 3, 2, 1,
-		0, 42, 40, 1, 0, 0, 0, 42, 41, 1, 0, 0, 0, 43, 46, 1, 0, 0, 0, 44, 42,
-		1, 0, 0, 0, 44, 45, 1, 0, 0, 0, 45, 47, 1, 0, 0, 0, 46, 44, 1, 0, 0, 0,
-		47, 48, 5, 10, 0, 0, 48, 49, 5, 0, 0, 1, 49, 1, 1, 0, 0, 0, 50, 51, 7,
-		0, 0, 0, 51, 52, 3, 4, 2, 0, 52, 57, 5, 9, 0, 0, 53, 56, 3, 22, 11, 0,
-		54, 56, 3, 2, 1, 0, 55, 53, 1, 0, 0, 0, 55, 54, 1, 0, 0, 0, 56, 59, 1,
-		0, 0, 0, 57, 55, 1, 0, 0, 0, 57, 58, 1, 0, 0, 0, 58, 60, 1, 0, 0, 0, 59,
-		57, 1, 0, 0, 0, 60, 61, 5, 10, 0, 0, 61, 90, 1, 0, 0, 0, 62, 63, 5, 5,
-		0, 0, 63, 68, 5, 9, 0, 0, 64, 67, 3, 22, 11, 0, 65, 67, 3, 2, 1, 0, 66,
-		64, 1, 0, 0, 0, 66, 65, 1, 0, 0, 0, 67, 70, 1, 0, 0, 0, 68, 66, 1, 0, 0,
-		0, 68, 69, 1, 0, 0, 0, 69, 71, 1, 0, 0, 0, 70, 68, 1, 0, 0, 0, 71, 90,
-		5, 10, 0, 0, 72, 75, 5, 6, 0, 0, 73, 74, 5, 38, 0, 0, 74, 76, 5, 36, 0,
-		0, 75, 73, 1, 0, 0, 0, 75, 76, 1, 0, 0, 0, 76, 77, 1, 0, 0, 0, 77, 78,
-		5, 38, 0, 0, 78, 79, 5, 37, 0, 0, 79, 80, 5, 38, 0, 0, 80, 85, 5, 39, 0,
-		0, 81, 84, 3, 22, 11, 0, 82, 84, 3, 2, 1, 0, 83, 81, 1, 0, 0, 0, 83, 82,
-		1, 0, 0, 0, 84, 87, 1, 0, 0, 0, 85, 83, 1, 0, 0, 0, 85, 86, 1, 0, 0, 0,
-		86, 88, 1, 0, 0, 0, 87, 85, 1, 0, 0, 0, 88, 90, 5, 10, 0, 0, 89, 50, 1,
-		0, 0, 0, 89, 62, 1, 0, 0, 0, 89, 72, 1, 0, 0, 0, 90, 3, 1, 0, 0, 0, 91,
-		92, 6, 2, -1, 0, 92, 93, 5, 13, 0, 0, 93, 94, 3, 4, 2, 0, 94, 95, 5, 14,
-		0, 0, 95, 104, 1, 0, 0, 0, 96, 97, 5, 11, 0, 0, 97, 98, 3, 4, 2, 0, 98,
-		99, 5, 12, 0, 0, 99, 104, 1, 0, 0, 0, 100, 101, 5, 17, 0, 0, 101, 104,
-		3, 4, 2, 2, 102, 104, 3, 6, 3, 0, 103, 91, 1, 0, 0, 0, 103, 96, 1, 0, 0,
-		0, 103, 100, 1, 0, 0, 0, 103, 102, 1, 0, 0, 0, 104, 111, 1, 0, 0, 0, 105,
-		106, 10, 3, 0, 0, 106, 107, 3, 18, 9, 0, 107, 108, 3, 4, 2, 4, 108, 110,
-		1, 0, 0, 0, 109, 105, 1, 0, 0, 0, 110, 113, 1, 0, 0, 0, 111, 109, 1, 0,
-		0, 0, 111, 112, 1, 0, 0, 0, 112, 5, 1, 0, 0, 0, 113, 111, 1, 0, 0, 0, 114,
-		117, 3, 10, 5, 0, 115, 117, 3, 8, 4, 0, 116, 114, 1, 0, 0, 0, 116, 115,
-		1, 0, 0, 0, 117, 7, 1, 0, 0, 0, 118, 119, 7, 1, 0, 0, 119, 9, 1, 0, 0,
-		0, 120, 121, 3, 12, 6, 0, 121, 122, 3, 20, 10, 0, 122, 123, 3, 12, 6, 0,
-		123, 11, 1, 0, 0, 0, 124, 133, 3, 14, 7, 0, 125, 133, 5, 34, 0, 0, 126,
-		133, 3, 34, 17, 0, 127, 133, 5, 32, 0, 0, 128, 133, 5, 30, 0, 0, 129, 133,
-		5, 31, 0, 0, 130, 133, 5, 29, 0, 0, 131, 133, 5, 33, 0, 0, 132, 124, 1,
-		0, 0, 0, 132, 125, 1, 0, 0, 0, 132, 126, 1, 0, 0, 0, 132, 127, 1, 0, 0,
-		0, 132, 128, 1, 0, 0, 0, 132, 129, 1, 0, 0, 0, 132, 130, 1, 0, 0, 0, 132,
-		131, 1, 0, 0, 0, 133, 13, 1, 0, 0, 0, 134, 135, 6, 7, -1, 0, 135, 136,
-		5, 13, 0, 0, 136, 137, 3, 14, 7, 0, 137, 138, 5, 14, 0, 0, 138, 141, 1,
-		0, 0, 0, 139, 141, 3, 16, 8, 0, 140, 134, 1, 0, 0, 0, 140, 139, 1, 0, 0,
-		0, 141, 147, 1, 0, 0, 0, 142, 143, 10, 2, 0, 0, 143, 144, 5, 18, 0, 0,
-		144, 146, 3, 14, 7, 3, 145, 142, 1, 0, 0, 0, 146, 149, 1, 0, 0, 0, 147,
-		145, 1, 0, 0, 0, 147, 148, 1, 0, 0, 0, 148, 15, 1, 0, 0, 0, 149, 147, 1,
-		0, 0, 0, 150, 151, 7, 2, 0, 0, 151, 152, 5, 18, 0, 0, 152, 153, 7, 2, 0,
-		0, 153, 17, 1, 0, 0, 0, 154, 155, 7, 3, 0, 0, 155, 19, 1, 0, 0, 0, 156,
-		157, 7, 4, 0, 0, 157, 21, 1, 0, 0, 0, 158, 159, 5, 33, 0, 0, 159, 163,
-		5, 9, 0, 0, 160, 162, 3, 24, 12, 0, 161, 160, 1, 0, 0, 0, 162, 165, 1,
-		0, 0, 0, 163, 161, 1, 0, 0, 0, 163, 164, 1, 0, 0, 0, 164, 166, 1, 0, 0,
-		0, 165, 163, 1, 0, 0, 0, 166, 167, 5, 10, 0, 0, 167, 23, 1, 0, 0, 0, 168,
-		169, 3, 26, 13, 0, 169, 170, 5, 15, 0, 0, 170, 172, 3, 28, 14, 0, 171,
-		173, 5, 16, 0, 0, 172, 171, 1, 0, 0, 0, 172, 173, 1, 0, 0, 0, 173, 25,
-		1, 0, 0, 0, 174, 175, 7, 5, 0, 0, 175, 27, 1, 0, 0, 0, 176, 183, 5, 34,
-		0, 0, 177, 183, 3, 32, 16, 0, 178, 183, 3, 30, 15, 0, 179, 183, 5, 30,
-		0, 0, 180, 183, 5, 29, 0, 0, 181, 183, 5, 33, 0, 0, 182, 176, 1, 0, 0,
-		0, 182, 177, 1, 0, 0, 0, 182, 178, 1, 0, 0, 0, 182, 179, 1, 0, 0, 0, 182,
-		180, 1, 0, 0, 0, 182, 181, 1, 0, 0, 0, 183, 29, 1, 0, 0, 0, 184, 188, 5,
-		9, 0, 0, 185, 187, 3, 24, 12, 0, 186, 185, 1, 0, 0, 0, 187, 190, 1, 0,
-		0, 0, 188, 186, 1, 0, 0, 0, 188, 189, 1, 0, 0, 0, 189, 191, 1, 0, 0, 0,
-		190, 188, 1, 0, 0, 0, 191, 192, 5, 10, 0, 0, 192, 31, 1, 0, 0, 0, 193,
-		201, 5, 11, 0, 0, 194, 198, 3, 36, 18, 0, 195, 197, 3, 36, 18, 0, 196,
-		195, 1, 0, 0, 0, 197, 200, 1, 0, 0, 0, 198, 196, 1, 0, 0, 0, 198, 199,
-		1, 0, 0, 0, 199, 202, 1, 0, 0, 0, 200, 198, 1, 0, 0, 0, 201, 194, 1, 0,
-		0, 0, 201, 202, 1, 0, 0, 0, 202, 203, 1, 0, 0, 0, 203, 204, 5, 12, 0, 0,
-		204, 33, 1, 0, 0, 0, 205, 213, 5, 11, 0, 0, 206, 210, 7, 6, 0, 0, 207,
-		209, 3, 36, 18, 0, 208, 207, 1, 0, 0, 0, 209, 212, 1, 0, 0, 0, 210, 208,
-		1, 0, 0, 0, 210, 211, 1, 0, 0, 0, 211, 214, 1, 0, 0, 0, 212, 210, 1, 0,
-		0, 0, 213, 206, 1, 0, 0, 0, 213, 214, 1, 0, 0, 0, 214, 215, 1, 0, 0, 0,
-		215, 216, 5, 12, 0, 0, 216, 35, 1, 0, 0, 0, 217, 218, 7, 7, 0, 0, 218,
-		37, 1, 0, 0, 0, 24, 42, 44, 55, 57, 66, 68, 75, 83, 85, 89, 103, 111, 116,
-		132, 140, 147, 163, 172, 182, 188, 198, 201, 210, 213,
+		2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 3, 2, 106, 8,
+		2, 1, 2, 1, 2, 1, 2, 1, 2, 5, 2, 112, 8, 2, 10, 2, 12, 2, 115, 9, 2, 1,
+		3, 1, 3, 3, 3, 119, 8, 3, 1, 4, 1, 4, 1, 5, 1, 5, 1, 5, 1, 5, 1, 6, 1,
+		6, 1, 6, 1, 6, 1, 6, 1, 6, 1, 6, 1, 6, 1, 6, 1, 6, 1, 6, 1, 6, 1, 6, 1,
+		6, 3, 6, 141, 8, 6, 1, 7, 1, 7, 1, 7, 1, 7, 1, 7, 1, 7, 3, 7, 149, 8, 7,
+		1, 7, 1, 7, 1, 7, 5, 7, 154, 8, 7, 10, 7, 12, 7, 157, 9, 7, 1, 8, 1, 8,
+		1, 8, 1, 8, 1, 9, 1, 9, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10,
+		1, 10, 1, 10, 1, 10, 1, 10, 3, 10, 176, 8, 10, 1, 11, 1, 11, 1, 11, 5,
+		11, 181, 8, 11, 10, 11, 12, 11, 184, 9, 11, 1, 11, 1, 11, 1, 12, 1, 12,
+		1, 12, 1, 12, 3, 12, 192, 8, 12, 1, 13, 1, 13, 1, 14, 1, 14, 1, 14, 1,
+		14, 1, 14, 1, 14, 3, 14, 202, 8, 14, 1, 15, 1, 15, 5, 15, 206, 8, 15, 10,
+		15, 12, 15, 209, 9, 15, 1, 15, 1, 15, 1, 16, 1, 16, 1, 16, 5, 16, 216,
+		8, 16, 10, 16, 12, 16, 219, 9, 16, 3, 16, 221, 8, 16, 1, 16, 1, 16, 1,
+		17, 1, 17, 1, 17, 5, 17, 228, 8, 17, 10, 17, 12, 17, 231, 9, 17, 3, 17,
+		233, 8, 17, 1, 17, 1, 17, 1, 18, 1, 18, 1, 18, 0, 2, 4, 14, 19, 0, 2, 4,
+		6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 0, 7, 1,
+		0, 3, 4, 2, 0, 29, 29, 32, 32, 2, 0, 32, 32, 34, 34, 1, 0, 27, 28, 2, 0,
+		30, 30, 33, 33, 2, 0, 29, 30, 34, 34, 3, 0, 16, 16, 29, 30, 33, 34, 268,
+		0, 38, 1, 0, 0, 0, 2, 89, 1, 0, 0, 0, 4, 105, 1, 0, 0, 0, 6, 118, 1, 0,
+		0, 0, 8, 120, 1, 0, 0, 0, 10, 122, 1, 0, 0, 0, 12, 140, 1, 0, 0, 0, 14,
+		148, 1, 0, 0, 0, 16, 158, 1, 0, 0, 0, 18, 162, 1, 0, 0, 0, 20, 175, 1,
+		0, 0, 0, 22, 177, 1, 0, 0, 0, 24, 187, 1, 0, 0, 0, 26, 193, 1, 0, 0, 0,
+		28, 201, 1, 0, 0, 0, 30, 203, 1, 0, 0, 0, 32, 212, 1, 0, 0, 0, 34, 224,
+		1, 0, 0, 0, 36, 236, 1, 0, 0, 0, 38, 39, 5, 33, 0, 0, 39, 44, 5, 9, 0,
+		0, 40, 43, 3, 22, 11, 0, 41, 43, 3, 2, 1, 0, 42, 40, 1, 0, 0, 0, 42, 41,
+		1, 0, 0, 0, 43, 46, 1, 0, 0, 0, 44, 42, 1, 0, 0, 0, 44, 45, 1, 0, 0, 0,
+		45, 47, 1, 0, 0, 0, 46, 44, 1, 0, 0, 0, 47, 48, 5, 10, 0, 0, 48, 49, 5,
+		0, 0, 1, 49, 1, 1, 0, 0, 0, 50, 51, 7, 0, 0, 0, 51, 52, 3, 4, 2, 0, 52,
+		57, 5, 9, 0, 0, 53, 56, 3, 22, 11, 0, 54, 56, 3, 2, 1, 0, 55, 53, 1, 0,
+		0, 0, 55, 54, 1, 0, 0, 0, 56, 59, 1, 0, 0, 0, 57, 55, 1, 0, 0, 0, 57, 58,
+		1, 0, 0, 0, 58, 60, 1, 0, 0, 0, 59, 57, 1, 0, 0, 0, 60, 61, 5, 10, 0, 0,
+		61, 90, 1, 0, 0, 0, 62, 63, 5, 5, 0, 0, 63, 68, 5, 9, 0, 0, 64, 67, 3,
+		22, 11, 0, 65, 67, 3, 2, 1, 0, 66, 64, 1, 0, 0, 0, 66, 65, 1, 0, 0, 0,
+		67, 70, 1, 0, 0, 0, 68, 66, 1, 0, 0, 0, 68, 69, 1, 0, 0, 0, 69, 71, 1,
+		0, 0, 0, 70, 68, 1, 0, 0, 0, 71, 90, 5, 10, 0, 0, 72, 75, 5, 6, 0, 0, 73,
+		74, 5, 38, 0, 0, 74, 76, 5, 36, 0, 0, 75, 73, 1, 0, 0, 0, 75, 76, 1, 0,
+		0, 0, 76, 77, 1, 0, 0, 0, 77, 78, 5, 38, 0, 0, 78, 79, 5, 37, 0, 0, 79,
+		80, 5, 38, 0, 0, 80, 85, 5, 39, 0, 0, 81, 84, 3, 22, 11, 0, 82, 84, 3,
+		2, 1, 0, 83, 81, 1, 0, 0, 0, 83, 82, 1, 0, 0, 0, 84, 87, 1, 0, 0, 0, 85,
+		83, 1, 0, 0, 0, 85, 86, 1, 0, 0, 0, 86, 88, 1, 0, 0, 0, 87, 85, 1, 0, 0,
+		0, 88, 90, 5, 10, 0, 0, 89, 50, 1, 0, 0, 0, 89, 62, 1, 0, 0, 0, 89, 72,
+		1, 0, 0, 0, 90, 3, 1, 0, 0, 0, 91, 92, 6, 2, -1, 0, 92, 93, 5, 13, 0, 0,
+		93, 94, 3, 4, 2, 0, 94, 95, 5, 14, 0, 0, 95, 106, 1, 0, 0, 0, 96, 97, 5,
+		11, 0, 0, 97, 98, 3, 4, 2, 0, 98, 99, 5, 12, 0, 0, 99, 106, 1, 0, 0, 0,
+		100, 101, 5, 17, 0, 0, 101, 106, 3, 4, 2, 3, 102, 103, 5, 8, 0, 0, 103,
+		106, 3, 4, 2, 2, 104, 106, 3, 6, 3, 0, 105, 91, 1, 0, 0, 0, 105, 96, 1,
+		0, 0, 0, 105, 100, 1, 0, 0, 0, 105, 102, 1, 0, 0, 0, 105, 104, 1, 0, 0,
+		0, 106, 113, 1, 0, 0, 0, 107, 108, 10, 4, 0, 0, 108, 109, 3, 18, 9, 0,
+		109, 110, 3, 4, 2, 5, 110, 112, 1, 0, 0, 0, 111, 107, 1, 0, 0, 0, 112,
+		115, 1, 0, 0, 0, 113, 111, 1, 0, 0, 0, 113, 114, 1, 0, 0, 0, 114, 5, 1,
+		0, 0, 0, 115, 113, 1, 0, 0, 0, 116, 119, 3, 10, 5, 0, 117, 119, 3, 8, 4,
+		0, 118, 116, 1, 0, 0, 0, 118, 117, 1, 0, 0, 0, 119, 7, 1, 0, 0, 0, 120,
+		121, 7, 1, 0, 0, 121, 9, 1, 0, 0, 0, 122, 123, 3, 12, 6, 0, 123, 124, 3,
+		20, 10, 0, 124, 125, 3, 12, 6, 0, 125, 11, 1, 0, 0, 0, 126, 141, 3, 14,
+		7, 0, 127, 141, 5, 34, 0, 0, 128, 141, 3, 34, 17, 0, 129, 141, 5, 32, 0,
+		0, 130, 141, 5, 30, 0, 0, 131, 141, 5, 31, 0, 0, 132, 141, 5, 29, 0, 0,
+		133, 141, 5, 33, 0, 0, 134, 135, 5, 13, 0, 0, 135, 136, 5, 31, 0, 0, 136,
+		141, 5, 14, 0, 0, 137, 138, 5, 13, 0, 0, 138, 139, 5, 30, 0, 0, 139, 141,
+		5, 14, 0, 0, 140, 126, 1, 0, 0, 0, 140, 127, 1, 0, 0, 0, 140, 128, 1, 0,
+		0, 0, 140, 129, 1, 0, 0, 0, 140, 130, 1, 0, 0, 0, 140, 131, 1, 0, 0, 0,
+		140, 132, 1, 0, 0, 0, 140, 133, 1, 0, 0, 0, 140, 134, 1, 0, 0, 0, 140,
+		137, 1, 0, 0, 0, 141, 13, 1, 0, 0, 0, 142, 143, 6, 7, -1, 0, 143, 144,
+		5, 13, 0, 0, 144, 145, 3, 14, 7, 0, 145, 146, 5, 14, 0, 0, 146, 149, 1,
+		0, 0, 0, 147, 149, 3, 16, 8, 0, 148, 142, 1, 0, 0, 0, 148, 147, 1, 0, 0,
+		0, 149, 155, 1, 0, 0, 0, 150, 151, 10, 2, 0, 0, 151, 152, 5, 18, 0, 0,
+		152, 154, 3, 14, 7, 3, 153, 150, 1, 0, 0, 0, 154, 157, 1, 0, 0, 0, 155,
+		153, 1, 0, 0, 0, 155, 156, 1, 0, 0, 0, 156, 15, 1, 0, 0, 0, 157, 155, 1,
+		0, 0, 0, 158, 159, 7, 2, 0, 0, 159, 160, 5, 18, 0, 0, 160, 161, 7, 2, 0,
+		0, 161, 17, 1, 0, 0, 0, 162, 163, 7, 3, 0, 0, 163, 19, 1, 0, 0, 0, 164,
+		176, 5, 19, 0, 0, 165, 176, 5, 20, 0, 0, 166, 176, 5, 21, 0, 0, 167, 176,
+		5, 22, 0, 0, 168, 176, 5, 23, 0, 0, 169, 176, 5, 24, 0, 0, 170, 176, 5,
+		25, 0, 0, 171, 176, 5, 26, 0, 0, 172, 176, 5, 7, 0, 0, 173, 174, 5, 8,
+		0, 0, 174, 176, 5, 7, 0, 0, 175, 164, 1, 0, 0, 0, 175, 165, 1, 0, 0, 0,
+		175, 166, 1, 0, 0, 0, 175, 167, 1, 0, 0, 0, 175, 168, 1, 0, 0, 0, 175,
+		169, 1, 0, 0, 0, 175, 170, 1, 0, 0, 0, 175, 171, 1, 0, 0, 0, 175, 172,
+		1, 0, 0, 0, 175, 173, 1, 0, 0, 0, 176, 21, 1, 0, 0, 0, 177, 178, 5, 33,
+		0, 0, 178, 182, 5, 9, 0, 0, 179, 181, 3, 24, 12, 0, 180, 179, 1, 0, 0,
+		0, 181, 184, 1, 0, 0, 0, 182, 180, 1, 0, 0, 0, 182, 183, 1, 0, 0, 0, 183,
+		185, 1, 0, 0, 0, 184, 182, 1, 0, 0, 0, 185, 186, 5, 10, 0, 0, 186, 23,
+		1, 0, 0, 0, 187, 188, 3, 26, 13, 0, 188, 189, 5, 15, 0, 0, 189, 191, 3,
+		28, 14, 0, 190, 192, 5, 16, 0, 0, 191, 190, 1, 0, 0, 0, 191, 192, 1, 0,
+		0, 0, 192, 25, 1, 0, 0, 0, 193, 194, 7, 4, 0, 0, 194, 27, 1, 0, 0, 0, 195,
+		202, 5, 34, 0, 0, 196, 202, 3, 32, 16, 0, 197, 202, 3, 30, 15, 0, 198,
+		202, 5, 30, 0, 0, 199, 202, 5, 29, 0, 0, 200, 202, 5, 33, 0, 0, 201, 195,
+		1, 0, 0, 0, 201, 196, 1, 0, 0, 0, 201, 197, 1, 0, 0, 0, 201, 198, 1, 0,
+		0, 0, 201, 199, 1, 0, 0, 0, 201, 200, 1, 0, 0, 0, 202, 29, 1, 0, 0, 0,
+		203, 207, 5, 9, 0, 0, 204, 206, 3, 24, 12, 0, 205, 204, 1, 0, 0, 0, 206,
+		209, 1, 0, 0, 0, 207, 205, 1, 0, 0, 0, 207, 208, 1, 0, 0, 0, 208, 210,
+		1, 0, 0, 0, 209, 207, 1, 0, 0, 0, 210, 211, 5, 10, 0, 0, 211, 31, 1, 0,
+		0, 0, 212, 220, 5, 11, 0, 0, 213, 217, 3, 36, 18, 0, 214, 216, 3, 36, 18,
+		0, 215, 214, 1, 0, 0, 0, 216, 219, 1, 0, 0, 0, 217, 215, 1, 0, 0, 0, 217,
+		218, 1, 0, 0, 0, 218, 221, 1, 0, 0, 0, 219, 217, 1, 0, 0, 0, 220, 213,
+		1, 0, 0, 0, 220, 221, 1, 0, 0, 0, 221, 222, 1, 0, 0, 0, 222, 223, 5, 12,
+		0, 0, 223, 33, 1, 0, 0, 0, 224, 232, 5, 11, 0, 0, 225, 229, 7, 5, 0, 0,
+		226, 228, 3, 36, 18, 0, 227, 226, 1, 0, 0, 0, 228, 231, 1, 0, 0, 0, 229,
+		227, 1, 0, 0, 0, 229, 230, 1, 0, 0, 0, 230, 233, 1, 0, 0, 0, 231, 229,
+		1, 0, 0, 0, 232, 225, 1, 0, 0, 0, 232, 233, 1, 0, 0, 0, 233, 234, 1, 0,
+		0, 0, 234, 235, 5, 12, 0, 0, 235, 35, 1, 0, 0, 0, 236, 237, 7, 6, 0, 0,
+		237, 37, 1, 0, 0, 0, 25, 42, 44, 55, 57, 66, 68, 75, 83, 85, 89, 105, 113,
+		118, 140, 148, 155, 175, 182, 191, 201, 207, 217, 220, 229, 232,
 	}
 	deserializer := antlr.NewATNDeserializer(nil)
 	staticData.atn = deserializer.Deserialize(staticData.serializedATN)
@@ -1036,6 +1047,7 @@ type IStatementContext interface {
 	LBRACKET() antlr.TerminalNode
 	RBRACKET() antlr.TerminalNode
 	BOOLNOT() antlr.TerminalNode
+	NOT() antlr.TerminalNode
 	Expression() IExpressionContext
 	Boolean_op() IBoolean_opContext
 
@@ -1136,6 +1148,10 @@ func (s *StatementContext) BOOLNOT() antlr.TerminalNode {
 	return s.GetToken(ChronicleLogstashParserBOOLNOT, 0)
 }
 
+func (s *StatementContext) NOT() antlr.TerminalNode {
+	return s.GetToken(ChronicleLogstashParserNOT, 0)
+}
+
 func (s *StatementContext) Expression() IExpressionContext {
 	var t antlr.RuleContext
 	for _, ctx := range s.GetChildren() {
@@ -1204,7 +1220,7 @@ func (p *ChronicleLogstashParser) statement(_p int) (localctx IStatementContext)
 	var _alt int
 
 	p.EnterOuterAlt(localctx, 1)
-	p.SetState(103)
+	p.SetState(105)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -1266,12 +1282,26 @@ func (p *ChronicleLogstashParser) statement(_p int) (localctx IStatementContext)
 		}
 		{
 			p.SetState(101)
-			p.statement(2)
+			p.statement(3)
 		}
 
 	case 4:
 		{
 			p.SetState(102)
+			p.Match(ChronicleLogstashParserNOT)
+			if p.HasError() {
+				// Recognition error - abort rule
+				goto errorExit
+			}
+		}
+		{
+			p.SetState(103)
+			p.statement(2)
+		}
+
+	case 5:
+		{
+			p.SetState(104)
 			p.Expression()
 		}
 
@@ -1279,7 +1309,7 @@ func (p *ChronicleLogstashParser) statement(_p int) (localctx IStatementContext)
 		goto errorExit
 	}
 	p.GetParserRuleContext().SetStop(p.GetTokenStream().LT(-1))
-	p.SetState(111)
+	p.SetState(113)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -1296,23 +1326,23 @@ func (p *ChronicleLogstashParser) statement(_p int) (localctx IStatementContext)
 			_prevctx = localctx
 			localctx = NewStatementContext(p, _parentctx, _parentState)
 			p.PushNewRecursionContext(localctx, _startState, ChronicleLogstashParserRULE_statement)
-			p.SetState(105)
+			p.SetState(107)
 
-			if !(p.Precpred(p.GetParserRuleContext(), 3)) {
-				p.SetError(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 3)", ""))
+			if !(p.Precpred(p.GetParserRuleContext(), 4)) {
+				p.SetError(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 4)", ""))
 				goto errorExit
 			}
 			{
-				p.SetState(106)
+				p.SetState(108)
 				p.Boolean_op()
 			}
 			{
-				p.SetState(107)
-				p.statement(4)
+				p.SetState(109)
+				p.statement(5)
 			}
 
 		}
-		p.SetState(113)
+		p.SetState(115)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -1438,7 +1468,7 @@ func (s *ExpressionContext) ExitRule(listener antlr.ParseTreeListener) {
 func (p *ChronicleLogstashParser) Expression() (localctx IExpressionContext) {
 	localctx = NewExpressionContext(p, p.GetParserRuleContext(), p.GetState())
 	p.EnterRule(localctx, 6, ChronicleLogstashParserRULE_expression)
-	p.SetState(116)
+	p.SetState(118)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -1448,14 +1478,14 @@ func (p *ChronicleLogstashParser) Expression() (localctx IExpressionContext) {
 	case 1:
 		p.EnterOuterAlt(localctx, 1)
 		{
-			p.SetState(114)
+			p.SetState(116)
 			p.Binary_expression()
 		}
 
 	case 2:
 		p.EnterOuterAlt(localctx, 2)
 		{
-			p.SetState(115)
+			p.SetState(117)
 			p.Unary_expression()
 		}
 
@@ -1558,7 +1588,7 @@ func (p *ChronicleLogstashParser) Unary_expression() (localctx IUnary_expression
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(118)
+		p.SetState(120)
 		_la = p.GetTokenStream().LA(1)
 
 		if !(_la == ChronicleLogstashParserBOOLEAN || _la == ChronicleLogstashParserIFSTATEMENTID) {
@@ -1712,15 +1742,15 @@ func (p *ChronicleLogstashParser) Binary_expression() (localctx IBinary_expressi
 	p.EnterRule(localctx, 10, ChronicleLogstashParserRULE_binary_expression)
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(120)
+		p.SetState(122)
 		p.Expression_val()
 	}
 	{
-		p.SetState(121)
+		p.SetState(123)
 		p.Boolean_eval()
 	}
 	{
-		p.SetState(122)
+		p.SetState(124)
 		p.Expression_val()
 	}
 
@@ -1753,6 +1783,8 @@ type IExpression_valContext interface {
 	REGEX() antlr.TerminalNode
 	BOOLEAN() antlr.TerminalNode
 	ID() antlr.TerminalNode
+	LPAREN() antlr.TerminalNode
+	RPAREN() antlr.TerminalNode
 
 	// IsExpression_valContext differentiates from other interfaces.
 	IsExpression_valContext()
@@ -1846,6 +1878,14 @@ func (s *Expression_valContext) ID() antlr.TerminalNode {
 	return s.GetToken(ChronicleLogstashParserID, 0)
 }
 
+func (s *Expression_valContext) LPAREN() antlr.TerminalNode {
+	return s.GetToken(ChronicleLogstashParserLPAREN, 0)
+}
+
+func (s *Expression_valContext) RPAREN() antlr.TerminalNode {
+	return s.GetToken(ChronicleLogstashParserRPAREN, 0)
+}
+
 func (s *Expression_valContext) GetRuleContext() antlr.RuleContext {
 	return s
 }
@@ -1869,7 +1909,7 @@ func (s *Expression_valContext) ExitRule(listener antlr.ParseTreeListener) {
 func (p *ChronicleLogstashParser) Expression_val() (localctx IExpression_valContext) {
 	localctx = NewExpression_valContext(p, p.GetParserRuleContext(), p.GetState())
 	p.EnterRule(localctx, 12, ChronicleLogstashParserRULE_expression_val)
-	p.SetState(132)
+	p.SetState(140)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -1879,14 +1919,14 @@ func (p *ChronicleLogstashParser) Expression_val() (localctx IExpression_valCont
 	case 1:
 		p.EnterOuterAlt(localctx, 1)
 		{
-			p.SetState(124)
+			p.SetState(126)
 			p.math_statement(0)
 		}
 
 	case 2:
 		p.EnterOuterAlt(localctx, 2)
 		{
-			p.SetState(125)
+			p.SetState(127)
 			p.Match(ChronicleLogstashParserNUMBER)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -1897,14 +1937,14 @@ func (p *ChronicleLogstashParser) Expression_val() (localctx IExpression_valCont
 	case 3:
 		p.EnterOuterAlt(localctx, 3)
 		{
-			p.SetState(126)
+			p.SetState(128)
 			p.If_list()
 		}
 
 	case 4:
 		p.EnterOuterAlt(localctx, 4)
 		{
-			p.SetState(127)
+			p.SetState(129)
 			p.Match(ChronicleLogstashParserIFSTATEMENTID)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -1915,7 +1955,7 @@ func (p *ChronicleLogstashParser) Expression_val() (localctx IExpression_valCont
 	case 5:
 		p.EnterOuterAlt(localctx, 5)
 		{
-			p.SetState(128)
+			p.SetState(130)
 			p.Match(ChronicleLogstashParserSTRING)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -1926,7 +1966,7 @@ func (p *ChronicleLogstashParser) Expression_val() (localctx IExpression_valCont
 	case 6:
 		p.EnterOuterAlt(localctx, 6)
 		{
-			p.SetState(129)
+			p.SetState(131)
 			p.Match(ChronicleLogstashParserREGEX)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -1937,7 +1977,7 @@ func (p *ChronicleLogstashParser) Expression_val() (localctx IExpression_valCont
 	case 7:
 		p.EnterOuterAlt(localctx, 7)
 		{
-			p.SetState(130)
+			p.SetState(132)
 			p.Match(ChronicleLogstashParserBOOLEAN)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -1948,8 +1988,62 @@ func (p *ChronicleLogstashParser) Expression_val() (localctx IExpression_valCont
 	case 8:
 		p.EnterOuterAlt(localctx, 8)
 		{
-			p.SetState(131)
+			p.SetState(133)
 			p.Match(ChronicleLogstashParserID)
+			if p.HasError() {
+				// Recognition error - abort rule
+				goto errorExit
+			}
+		}
+
+	case 9:
+		p.EnterOuterAlt(localctx, 9)
+		{
+			p.SetState(134)
+			p.Match(ChronicleLogstashParserLPAREN)
+			if p.HasError() {
+				// Recognition error - abort rule
+				goto errorExit
+			}
+		}
+		{
+			p.SetState(135)
+			p.Match(ChronicleLogstashParserREGEX)
+			if p.HasError() {
+				// Recognition error - abort rule
+				goto errorExit
+			}
+		}
+		{
+			p.SetState(136)
+			p.Match(ChronicleLogstashParserRPAREN)
+			if p.HasError() {
+				// Recognition error - abort rule
+				goto errorExit
+			}
+		}
+
+	case 10:
+		p.EnterOuterAlt(localctx, 10)
+		{
+			p.SetState(137)
+			p.Match(ChronicleLogstashParserLPAREN)
+			if p.HasError() {
+				// Recognition error - abort rule
+				goto errorExit
+			}
+		}
+		{
+			p.SetState(138)
+			p.Match(ChronicleLogstashParserSTRING)
+			if p.HasError() {
+				// Recognition error - abort rule
+				goto errorExit
+			}
+		}
+		{
+			p.SetState(139)
+			p.Match(ChronicleLogstashParserRPAREN)
 			if p.HasError() {
 				// Recognition error - abort rule
 				goto errorExit
@@ -2129,7 +2223,7 @@ func (p *ChronicleLogstashParser) math_statement(_p int) (localctx IMath_stateme
 	var _alt int
 
 	p.EnterOuterAlt(localctx, 1)
-	p.SetState(140)
+	p.SetState(148)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -2138,7 +2232,7 @@ func (p *ChronicleLogstashParser) math_statement(_p int) (localctx IMath_stateme
 	switch p.GetTokenStream().LA(1) {
 	case ChronicleLogstashParserLPAREN:
 		{
-			p.SetState(135)
+			p.SetState(143)
 			p.Match(ChronicleLogstashParserLPAREN)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -2146,11 +2240,11 @@ func (p *ChronicleLogstashParser) math_statement(_p int) (localctx IMath_stateme
 			}
 		}
 		{
-			p.SetState(136)
+			p.SetState(144)
 			p.math_statement(0)
 		}
 		{
-			p.SetState(137)
+			p.SetState(145)
 			p.Match(ChronicleLogstashParserRPAREN)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -2160,7 +2254,7 @@ func (p *ChronicleLogstashParser) math_statement(_p int) (localctx IMath_stateme
 
 	case ChronicleLogstashParserIFSTATEMENTID, ChronicleLogstashParserNUMBER:
 		{
-			p.SetState(139)
+			p.SetState(147)
 			p.Math_expression()
 		}
 
@@ -2169,7 +2263,7 @@ func (p *ChronicleLogstashParser) math_statement(_p int) (localctx IMath_stateme
 		goto errorExit
 	}
 	p.GetParserRuleContext().SetStop(p.GetTokenStream().LT(-1))
-	p.SetState(147)
+	p.SetState(155)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -2186,14 +2280,14 @@ func (p *ChronicleLogstashParser) math_statement(_p int) (localctx IMath_stateme
 			_prevctx = localctx
 			localctx = NewMath_statementContext(p, _parentctx, _parentState)
 			p.PushNewRecursionContext(localctx, _startState, ChronicleLogstashParserRULE_math_statement)
-			p.SetState(142)
+			p.SetState(150)
 
 			if !(p.Precpred(p.GetParserRuleContext(), 2)) {
 				p.SetError(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 2)", ""))
 				goto errorExit
 			}
 			{
-				p.SetState(143)
+				p.SetState(151)
 				p.Match(ChronicleLogstashParserMATHOP)
 				if p.HasError() {
 					// Recognition error - abort rule
@@ -2201,12 +2295,12 @@ func (p *ChronicleLogstashParser) math_statement(_p int) (localctx IMath_stateme
 				}
 			}
 			{
-				p.SetState(144)
+				p.SetState(152)
 				p.math_statement(3)
 			}
 
 		}
-		p.SetState(149)
+		p.SetState(157)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -2327,7 +2421,7 @@ func (p *ChronicleLogstashParser) Math_expression() (localctx IMath_expressionCo
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(150)
+		p.SetState(158)
 		_la = p.GetTokenStream().LA(1)
 
 		if !(_la == ChronicleLogstashParserIFSTATEMENTID || _la == ChronicleLogstashParserNUMBER) {
@@ -2338,7 +2432,7 @@ func (p *ChronicleLogstashParser) Math_expression() (localctx IMath_expressionCo
 		}
 	}
 	{
-		p.SetState(151)
+		p.SetState(159)
 		p.Match(ChronicleLogstashParserMATHOP)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -2346,7 +2440,7 @@ func (p *ChronicleLogstashParser) Math_expression() (localctx IMath_expressionCo
 		}
 	}
 	{
-		p.SetState(152)
+		p.SetState(160)
 		_la = p.GetTokenStream().LA(1)
 
 		if !(_la == ChronicleLogstashParserIFSTATEMENTID || _la == ChronicleLogstashParserNUMBER) {
@@ -2452,7 +2546,7 @@ func (p *ChronicleLogstashParser) Boolean_op() (localctx IBoolean_opContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(154)
+		p.SetState(162)
 		_la = p.GetTokenStream().LA(1)
 
 		if !(_la == ChronicleLogstashParserAND || _la == ChronicleLogstashParserOR) {
@@ -2493,6 +2587,7 @@ type IBoolean_evalContext interface {
 	MATCH() antlr.TerminalNode
 	NOTMATCH() antlr.TerminalNode
 	IN() antlr.TerminalNode
+	NOT() antlr.TerminalNode
 
 	// IsBoolean_evalContext differentiates from other interfaces.
 	IsBoolean_evalContext()
@@ -2566,6 +2661,10 @@ func (s *Boolean_evalContext) IN() antlr.TerminalNode {
 	return s.GetToken(ChronicleLogstashParserIN, 0)
 }
 
+func (s *Boolean_evalContext) NOT() antlr.TerminalNode {
+	return s.GetToken(ChronicleLogstashParserNOT, 0)
+}
+
 func (s *Boolean_evalContext) GetRuleContext() antlr.RuleContext {
 	return s
 }
@@ -2589,19 +2688,134 @@ func (s *Boolean_evalContext) ExitRule(listener antlr.ParseTreeListener) {
 func (p *ChronicleLogstashParser) Boolean_eval() (localctx IBoolean_evalContext) {
 	localctx = NewBoolean_evalContext(p, p.GetParserRuleContext(), p.GetState())
 	p.EnterRule(localctx, 20, ChronicleLogstashParserRULE_boolean_eval)
-	var _la int
+	p.SetState(175)
+	p.GetErrorHandler().Sync(p)
+	if p.HasError() {
+		goto errorExit
+	}
 
-	p.EnterOuterAlt(localctx, 1)
-	{
-		p.SetState(156)
-		_la = p.GetTokenStream().LA(1)
-
-		if !((int64(_la) & ^0x3f) == 0 && ((int64(1)<<_la)&133693568) != 0) {
-			p.GetErrorHandler().RecoverInline(p)
-		} else {
-			p.GetErrorHandler().ReportMatch(p)
-			p.Consume()
+	switch p.GetTokenStream().LA(1) {
+	case ChronicleLogstashParserEQUAL:
+		p.EnterOuterAlt(localctx, 1)
+		{
+			p.SetState(164)
+			p.Match(ChronicleLogstashParserEQUAL)
+			if p.HasError() {
+				// Recognition error - abort rule
+				goto errorExit
+			}
 		}
+
+	case ChronicleLogstashParserNOTEQUAL:
+		p.EnterOuterAlt(localctx, 2)
+		{
+			p.SetState(165)
+			p.Match(ChronicleLogstashParserNOTEQUAL)
+			if p.HasError() {
+				// Recognition error - abort rule
+				goto errorExit
+			}
+		}
+
+	case ChronicleLogstashParserLESSTHAN:
+		p.EnterOuterAlt(localctx, 3)
+		{
+			p.SetState(166)
+			p.Match(ChronicleLogstashParserLESSTHAN)
+			if p.HasError() {
+				// Recognition error - abort rule
+				goto errorExit
+			}
+		}
+
+	case ChronicleLogstashParserGREATERTHAN:
+		p.EnterOuterAlt(localctx, 4)
+		{
+			p.SetState(167)
+			p.Match(ChronicleLogstashParserGREATERTHAN)
+			if p.HasError() {
+				// Recognition error - abort rule
+				goto errorExit
+			}
+		}
+
+	case ChronicleLogstashParserLTEQUAL:
+		p.EnterOuterAlt(localctx, 5)
+		{
+			p.SetState(168)
+			p.Match(ChronicleLogstashParserLTEQUAL)
+			if p.HasError() {
+				// Recognition error - abort rule
+				goto errorExit
+			}
+		}
+
+	case ChronicleLogstashParserGTEQUAL:
+		p.EnterOuterAlt(localctx, 6)
+		{
+			p.SetState(169)
+			p.Match(ChronicleLogstashParserGTEQUAL)
+			if p.HasError() {
+				// Recognition error - abort rule
+				goto errorExit
+			}
+		}
+
+	case ChronicleLogstashParserMATCH:
+		p.EnterOuterAlt(localctx, 7)
+		{
+			p.SetState(170)
+			p.Match(ChronicleLogstashParserMATCH)
+			if p.HasError() {
+				// Recognition error - abort rule
+				goto errorExit
+			}
+		}
+
+	case ChronicleLogstashParserNOTMATCH:
+		p.EnterOuterAlt(localctx, 8)
+		{
+			p.SetState(171)
+			p.Match(ChronicleLogstashParserNOTMATCH)
+			if p.HasError() {
+				// Recognition error - abort rule
+				goto errorExit
+			}
+		}
+
+	case ChronicleLogstashParserIN:
+		p.EnterOuterAlt(localctx, 9)
+		{
+			p.SetState(172)
+			p.Match(ChronicleLogstashParserIN)
+			if p.HasError() {
+				// Recognition error - abort rule
+				goto errorExit
+			}
+		}
+
+	case ChronicleLogstashParserNOT:
+		p.EnterOuterAlt(localctx, 10)
+		{
+			p.SetState(173)
+			p.Match(ChronicleLogstashParserNOT)
+			if p.HasError() {
+				// Recognition error - abort rule
+				goto errorExit
+			}
+		}
+		{
+			p.SetState(174)
+			p.Match(ChronicleLogstashParserIN)
+			if p.HasError() {
+				// Recognition error - abort rule
+				goto errorExit
+			}
+		}
+
+	default:
+		p.SetError(antlr.NewNoViableAltException(p, nil, nil, nil, nil, nil))
+		goto errorExit
 	}
 
 errorExit:
@@ -2747,7 +2961,7 @@ func (p *ChronicleLogstashParser) Plugin() (localctx IPluginContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(158)
+		p.SetState(177)
 		p.Match(ChronicleLogstashParserID)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -2755,14 +2969,14 @@ func (p *ChronicleLogstashParser) Plugin() (localctx IPluginContext) {
 		}
 	}
 	{
-		p.SetState(159)
+		p.SetState(178)
 		p.Match(ChronicleLogstashParserLBRACE)
 		if p.HasError() {
 			// Recognition error - abort rule
 			goto errorExit
 		}
 	}
-	p.SetState(163)
+	p.SetState(182)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -2771,11 +2985,11 @@ func (p *ChronicleLogstashParser) Plugin() (localctx IPluginContext) {
 
 	for _la == ChronicleLogstashParserSTRING || _la == ChronicleLogstashParserID {
 		{
-			p.SetState(160)
+			p.SetState(179)
 			p.Keyvalue()
 		}
 
-		p.SetState(165)
+		p.SetState(184)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -2783,7 +2997,7 @@ func (p *ChronicleLogstashParser) Plugin() (localctx IPluginContext) {
 		_la = p.GetTokenStream().LA(1)
 	}
 	{
-		p.SetState(166)
+		p.SetState(185)
 		p.Match(ChronicleLogstashParserRBRACE)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -2920,11 +3134,11 @@ func (p *ChronicleLogstashParser) Keyvalue() (localctx IKeyvalueContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(168)
+		p.SetState(187)
 		p.Kv_lvalue()
 	}
 	{
-		p.SetState(169)
+		p.SetState(188)
 		p.Match(ChronicleLogstashParserKVSEPARATOR)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -2932,10 +3146,10 @@ func (p *ChronicleLogstashParser) Keyvalue() (localctx IKeyvalueContext) {
 		}
 	}
 	{
-		p.SetState(170)
+		p.SetState(189)
 		p.Kv_rvalue()
 	}
-	p.SetState(172)
+	p.SetState(191)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -2944,7 +3158,7 @@ func (p *ChronicleLogstashParser) Keyvalue() (localctx IKeyvalueContext) {
 
 	if _la == ChronicleLogstashParserCOMMA {
 		{
-			p.SetState(171)
+			p.SetState(190)
 			p.Match(ChronicleLogstashParserCOMMA)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -3049,7 +3263,7 @@ func (p *ChronicleLogstashParser) Kv_lvalue() (localctx IKv_lvalueContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(174)
+		p.SetState(193)
 		_la = p.GetTokenStream().LA(1)
 
 		if !(_la == ChronicleLogstashParserSTRING || _la == ChronicleLogstashParserID) {
@@ -3196,7 +3410,7 @@ func (p *ChronicleLogstashParser) Kv_rvalue() (localctx IKv_rvalueContext) {
 	localctx = NewKv_rvalueContext(p, p.GetParserRuleContext(), p.GetState())
 	p.EnterRule(localctx, 28, ChronicleLogstashParserRULE_kv_rvalue)
 	p.EnterOuterAlt(localctx, 1)
-	p.SetState(182)
+	p.SetState(201)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -3205,7 +3419,7 @@ func (p *ChronicleLogstashParser) Kv_rvalue() (localctx IKv_rvalueContext) {
 	switch p.GetTokenStream().LA(1) {
 	case ChronicleLogstashParserNUMBER:
 		{
-			p.SetState(176)
+			p.SetState(195)
 			p.Match(ChronicleLogstashParserNUMBER)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -3215,19 +3429,19 @@ func (p *ChronicleLogstashParser) Kv_rvalue() (localctx IKv_rvalueContext) {
 
 	case ChronicleLogstashParserLBRACKET:
 		{
-			p.SetState(177)
+			p.SetState(196)
 			p.List()
 		}
 
 	case ChronicleLogstashParserLBRACE:
 		{
-			p.SetState(178)
+			p.SetState(197)
 			p.Hash()
 		}
 
 	case ChronicleLogstashParserSTRING:
 		{
-			p.SetState(179)
+			p.SetState(198)
 			p.Match(ChronicleLogstashParserSTRING)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -3237,7 +3451,7 @@ func (p *ChronicleLogstashParser) Kv_rvalue() (localctx IKv_rvalueContext) {
 
 	case ChronicleLogstashParserBOOLEAN:
 		{
-			p.SetState(180)
+			p.SetState(199)
 			p.Match(ChronicleLogstashParserBOOLEAN)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -3247,7 +3461,7 @@ func (p *ChronicleLogstashParser) Kv_rvalue() (localctx IKv_rvalueContext) {
 
 	case ChronicleLogstashParserID:
 		{
-			p.SetState(181)
+			p.SetState(200)
 			p.Match(ChronicleLogstashParserID)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -3398,14 +3612,14 @@ func (p *ChronicleLogstashParser) Hash() (localctx IHashContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(184)
+		p.SetState(203)
 		p.Match(ChronicleLogstashParserLBRACE)
 		if p.HasError() {
 			// Recognition error - abort rule
 			goto errorExit
 		}
 	}
-	p.SetState(188)
+	p.SetState(207)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -3414,11 +3628,11 @@ func (p *ChronicleLogstashParser) Hash() (localctx IHashContext) {
 
 	for _la == ChronicleLogstashParserSTRING || _la == ChronicleLogstashParserID {
 		{
-			p.SetState(185)
+			p.SetState(204)
 			p.Keyvalue()
 		}
 
-		p.SetState(190)
+		p.SetState(209)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -3426,7 +3640,7 @@ func (p *ChronicleLogstashParser) Hash() (localctx IHashContext) {
 		_la = p.GetTokenStream().LA(1)
 	}
 	{
-		p.SetState(191)
+		p.SetState(210)
 		p.Match(ChronicleLogstashParserRBRACE)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -3572,14 +3786,14 @@ func (p *ChronicleLogstashParser) List() (localctx IListContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(193)
+		p.SetState(212)
 		p.Match(ChronicleLogstashParserLBRACKET)
 		if p.HasError() {
 			// Recognition error - abort rule
 			goto errorExit
 		}
 	}
-	p.SetState(201)
+	p.SetState(220)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -3588,10 +3802,10 @@ func (p *ChronicleLogstashParser) List() (localctx IListContext) {
 
 	if (int64(_la) & ^0x3f) == 0 && ((int64(1)<<_la)&27380482048) != 0 {
 		{
-			p.SetState(194)
+			p.SetState(213)
 			p.List_value()
 		}
-		p.SetState(198)
+		p.SetState(217)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -3600,11 +3814,11 @@ func (p *ChronicleLogstashParser) List() (localctx IListContext) {
 
 		for (int64(_la) & ^0x3f) == 0 && ((int64(1)<<_la)&27380482048) != 0 {
 			{
-				p.SetState(195)
+				p.SetState(214)
 				p.List_value()
 			}
 
-			p.SetState(200)
+			p.SetState(219)
 			p.GetErrorHandler().Sync(p)
 			if p.HasError() {
 				goto errorExit
@@ -3614,7 +3828,7 @@ func (p *ChronicleLogstashParser) List() (localctx IListContext) {
 
 	}
 	{
-		p.SetState(203)
+		p.SetState(222)
 		p.Match(ChronicleLogstashParserRBRACKET)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -3775,14 +3989,14 @@ func (p *ChronicleLogstashParser) If_list() (localctx IIf_listContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(205)
+		p.SetState(224)
 		p.Match(ChronicleLogstashParserLBRACKET)
 		if p.HasError() {
 			// Recognition error - abort rule
 			goto errorExit
 		}
 	}
-	p.SetState(213)
+	p.SetState(232)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -3791,7 +4005,7 @@ func (p *ChronicleLogstashParser) If_list() (localctx IIf_listContext) {
 
 	if (int64(_la) & ^0x3f) == 0 && ((int64(1)<<_la)&18790481920) != 0 {
 		{
-			p.SetState(206)
+			p.SetState(225)
 			_la = p.GetTokenStream().LA(1)
 
 			if !((int64(_la) & ^0x3f) == 0 && ((int64(1)<<_la)&18790481920) != 0) {
@@ -3801,7 +4015,7 @@ func (p *ChronicleLogstashParser) If_list() (localctx IIf_listContext) {
 				p.Consume()
 			}
 		}
-		p.SetState(210)
+		p.SetState(229)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -3810,11 +4024,11 @@ func (p *ChronicleLogstashParser) If_list() (localctx IIf_listContext) {
 
 		for (int64(_la) & ^0x3f) == 0 && ((int64(1)<<_la)&27380482048) != 0 {
 			{
-				p.SetState(207)
+				p.SetState(226)
 				p.List_value()
 			}
 
-			p.SetState(212)
+			p.SetState(231)
 			p.GetErrorHandler().Sync(p)
 			if p.HasError() {
 				goto errorExit
@@ -3824,7 +4038,7 @@ func (p *ChronicleLogstashParser) If_list() (localctx IIf_listContext) {
 
 	}
 	{
-		p.SetState(215)
+		p.SetState(234)
 		p.Match(ChronicleLogstashParserRBRACKET)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -3942,7 +4156,7 @@ func (p *ChronicleLogstashParser) List_value() (localctx IList_valueContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(217)
+		p.SetState(236)
 		_la = p.GetTokenStream().LA(1)
 
 		if !((int64(_la) & ^0x3f) == 0 && ((int64(1)<<_la)&27380482048) != 0) {
@@ -3990,7 +4204,7 @@ func (p *ChronicleLogstashParser) Sempred(localctx antlr.RuleContext, ruleIndex,
 func (p *ChronicleLogstashParser) Statement_Sempred(localctx antlr.RuleContext, predIndex int) bool {
 	switch predIndex {
 	case 0:
-		return p.Precpred(p.GetParserRuleContext(), 3)
+		return p.Precpred(p.GetParserRuleContext(), 4)
 
 	default:
 		panic("No predicate with index: " + fmt.Sprint(predIndex))
