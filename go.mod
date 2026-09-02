@@ -1,6 +1,6 @@
 module github.com/calebryant/gostash-antlr
 
-go 1.26.1
+go 1.26.6
 
 require github.com/antlr4-go/antlr/v4 v4.13.1
 
