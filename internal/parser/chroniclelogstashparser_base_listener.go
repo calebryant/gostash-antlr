@@ -1,4 +1,4 @@
-// Code generated from ChronicleLogstashParser.g4 by ANTLR 4.13.2. DO NOT EDIT.
+// Code generated from ChronicleLogstashParser.g4 by ANTLR 4.13.1. DO NOT EDIT.
 
 package parser // ChronicleLogstashParser
 
@@ -33,6 +33,18 @@ func (s *BaseChronicleLogstashParserListener) EnterConditionalblock(ctx *Conditi
 // ExitConditionalblock is called when production conditionalblock is exited.
 func (s *BaseChronicleLogstashParserListener) ExitConditionalblock(ctx *ConditionalblockContext) {}
 
+// EnterFor_var is called when production for_var is entered.
+func (s *BaseChronicleLogstashParserListener) EnterFor_var(ctx *For_varContext) {}
+
+// ExitFor_var is called when production for_var is exited.
+func (s *BaseChronicleLogstashParserListener) ExitFor_var(ctx *For_varContext) {}
+
+// EnterFor_iterable is called when production for_iterable is entered.
+func (s *BaseChronicleLogstashParserListener) EnterFor_iterable(ctx *For_iterableContext) {}
+
+// ExitFor_iterable is called when production for_iterable is exited.
+func (s *BaseChronicleLogstashParserListener) ExitFor_iterable(ctx *For_iterableContext) {}
+
 // EnterStatement is called when production statement is entered.
 func (s *BaseChronicleLogstashParserListener) EnterStatement(ctx *StatementContext) {}
 
@@ -62,6 +74,24 @@ func (s *BaseChronicleLogstashParserListener) EnterExpression_val(ctx *Expressio
 
 // ExitExpression_val is called when production expression_val is exited.
 func (s *BaseChronicleLogstashParserListener) ExitExpression_val(ctx *Expression_valContext) {}
+
+// EnterSigned_number is called when production signed_number is entered.
+func (s *BaseChronicleLogstashParserListener) EnterSigned_number(ctx *Signed_numberContext) {}
+
+// ExitSigned_number is called when production signed_number is exited.
+func (s *BaseChronicleLogstashParserListener) ExitSigned_number(ctx *Signed_numberContext) {}
+
+// EnterParen_list is called when production paren_list is entered.
+func (s *BaseChronicleLogstashParserListener) EnterParen_list(ctx *Paren_listContext) {}
+
+// ExitParen_list is called when production paren_list is exited.
+func (s *BaseChronicleLogstashParserListener) ExitParen_list(ctx *Paren_listContext) {}
+
+// EnterParen_value is called when production paren_value is entered.
+func (s *BaseChronicleLogstashParserListener) EnterParen_value(ctx *Paren_valueContext) {}
+
+// ExitParen_value is called when production paren_value is exited.
+func (s *BaseChronicleLogstashParserListener) ExitParen_value(ctx *Paren_valueContext) {}
 
 // EnterMath_statement is called when production math_statement is entered.
 func (s *BaseChronicleLogstashParserListener) EnterMath_statement(ctx *Math_statementContext) {}

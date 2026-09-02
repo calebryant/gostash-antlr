@@ -1,4 +1,4 @@
-// Code generated from ChronicleLogstashParser.g4 by ANTLR 4.13.2. DO NOT EDIT.
+// Code generated from ChronicleLogstashParser.g4 by ANTLR 4.13.1. DO NOT EDIT.
 
 package parser // ChronicleLogstashParser
 
@@ -14,6 +14,12 @@ type ChronicleLogstashParserListener interface {
 	// EnterConditionalblock is called when entering the conditionalblock production.
 	EnterConditionalblock(c *ConditionalblockContext)
 
+	// EnterFor_var is called when entering the for_var production.
+	EnterFor_var(c *For_varContext)
+
+	// EnterFor_iterable is called when entering the for_iterable production.
+	EnterFor_iterable(c *For_iterableContext)
+
 	// EnterStatement is called when entering the statement production.
 	EnterStatement(c *StatementContext)
 
@@ -28,6 +34,15 @@ type ChronicleLogstashParserListener interface {
 
 	// EnterExpression_val is called when entering the expression_val production.
 	EnterExpression_val(c *Expression_valContext)
+
+	// EnterSigned_number is called when entering the signed_number production.
+	EnterSigned_number(c *Signed_numberContext)
+
+	// EnterParen_list is called when entering the paren_list production.
+	EnterParen_list(c *Paren_listContext)
+
+	// EnterParen_value is called when entering the paren_value production.
+	EnterParen_value(c *Paren_valueContext)
 
 	// EnterMath_statement is called when entering the math_statement production.
 	EnterMath_statement(c *Math_statementContext)
@@ -71,6 +86,12 @@ type ChronicleLogstashParserListener interface {
 	// ExitConditionalblock is called when exiting the conditionalblock production.
 	ExitConditionalblock(c *ConditionalblockContext)
 
+	// ExitFor_var is called when exiting the for_var production.
+	ExitFor_var(c *For_varContext)
+
+	// ExitFor_iterable is called when exiting the for_iterable production.
+	ExitFor_iterable(c *For_iterableContext)
+
 	// ExitStatement is called when exiting the statement production.
 	ExitStatement(c *StatementContext)
 
@@ -85,6 +106,15 @@ type ChronicleLogstashParserListener interface {
 
 	// ExitExpression_val is called when exiting the expression_val production.
 	ExitExpression_val(c *Expression_valContext)
+
+	// ExitSigned_number is called when exiting the signed_number production.
+	ExitSigned_number(c *Signed_numberContext)
+
+	// ExitParen_list is called when exiting the paren_list production.
+	ExitParen_list(c *Paren_listContext)
+
+	// ExitParen_value is called when exiting the paren_value production.
+	ExitParen_value(c *Paren_valueContext)
 
 	// ExitMath_statement is called when exiting the math_statement production.
 	ExitMath_statement(c *Math_statementContext)
