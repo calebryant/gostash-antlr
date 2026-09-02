@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"github.com/antlr4-go/antlr/v4"
-	parser "github.com/calebryant/gostash-antlr/antlr"
+	parser "github.com/calebryant/gostash-antlr/internal/parser"
 )
 
 // CustomErrorListener implements antlr.ErrorListener

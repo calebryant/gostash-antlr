@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"github.com/antlr4-go/antlr/v4"
-	parser "github.com/calebryant/gostash-antlr/antlr"
+	parser "github.com/calebryant/gostash-antlr/internal/parser"
 )
 
 // ASTBuilder builds an AST from the parse tree using the visitor pattern
@@ -305,16 +305,19 @@ func (b *ASTBuilder) visitForLoop(ctx *parser.ConditionalblockContext) *ForLoop 
 		loop.LineNumber = ctx.GetStart().GetLine()
 	}
 
-	// Extract for loop components
-	forIds := ctx.AllFORID()
-	if len(forIds) > 0 {
-		loop.Variable = forIds[0].GetText()
+	// Extract for loop components. With two loop variables the first is the
+	// index/key and the second is the value: `for key, value in thing map { }`.
+	forVars := ctx.AllFor_var()
+	switch len(forVars) {
+	case 1:
+		loop.Variable = forVars[0].GetText()
+	case 2:
+		loop.Index = forVars[0].GetText()
+		loop.Variable = forVars[1].GetText()
 	}
-	if len(forIds) > 1 {
-		loop.Iterable = forIds[1].GetText()
-	}
-	if len(forIds) > 2 {
-		loop.Index = forIds[2].GetText()
+
+	if ctx.For_iterable() != nil {
+		loop.Iterable = sourceText(ctx.For_iterable())
 	}
 
 	// Process blocks inside the for loop
@@ -343,6 +346,21 @@ func (b *ASTBuilder) visitStatement(ctx parser.IStatementContext) string {
 	}
 
 	return ctx.GetText()
+}
+
+// sourceText returns the original source text of a rule, including the
+// whitespace between its tokens. ctx.GetText() concatenates token text and so
+// would render `addition map` as `additionmap`.
+func sourceText(ctx antlr.ParserRuleContext) string {
+	start, stop := ctx.GetStart(), ctx.GetStop()
+	if start == nil || stop == nil {
+		return ctx.GetText()
+	}
+	stream := start.GetInputStream()
+	if stream == nil {
+		return ctx.GetText()
+	}
+	return stream.GetTextFromInterval(antlr.NewInterval(start.GetStart(), stop.GetStop()))
 }
 
 // Helper functions
